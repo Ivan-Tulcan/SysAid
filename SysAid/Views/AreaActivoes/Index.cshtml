@@ -1,0 +1,32 @@
+﻿@model IEnumerable<SysAid.AreaActivo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Departamentos</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Lista de departamentos
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.area)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idAreaActivo }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idAreaActivo })
+        </td>
+    </tr>
+}
+
+</table>

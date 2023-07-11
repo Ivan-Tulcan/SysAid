@@ -1,0 +1,94 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    @*<section class="row" aria-labelledby="aspnetTitle">
+            <h1 id="title">Proyecto de Seguridad Informática</h1>
+            <p class="lead">Sistema de gestión de activos y riesgo</p>
+        </section>
+
+        <div class="row">
+            <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+                <h2 id="gettingStartedTitle">Listado de activos</h2>
+                <p>
+                    Lista los activos que tienen a disposición para determinar el valor de los activos de una organización ya que contiene
+                    información para su funcionamiento y operación
+                </p>
+                <p><a class="btn btn-outline-dark" href="ListadoActivos/Index">Lista de Activos &raquo;</a></p>
+            </section>
+            <section class="col-md-4" aria-labelledby="librariesTitle">
+                <h2 id="librariesTitle">Tipo de Activos</h2>
+                <p>Describir si el activo es un bien tangible o intangible</p>
+                <p><a class="btn btn-outline-dark" href="TipoActivoes/Index">Tipo de Activos &raquo;</a></p>
+            </section>
+            <section class="col-md-4" aria-labelledby="hostingTitle">
+                <h2 id="hostingTitle">Area</h2>
+                <p>Determinar la ubicación de los activos de la organización para su correcta gestión y operación</p>
+                <p><a class="btn btn-outline-dark" href="AreaActivoes/Index">Area de Activos &raquo;</a></p>
+            </section>
+            <section class="col-md-4" aria-labelledby="hostingTitle">
+                <h2 id="hostingTitle">Controles</h2>
+                <p>Salvaguardas que tiene la organización en operación</p>
+                <p><a class="btn btn-outline-dark" href="Controles/Index">Controles &raquo;</a></p>
+            </section>
+            <section class="col-md-4" aria-labelledby="hostingTitle">
+                <h2 id="hostingTitle">Amenazas</h2>
+                <p>Riesgo que tiene el activo en operación en la empresa</p>
+                <p><a class="btn btn-outline-dark" href="Amenazas/Index">Amenazas &raquo;</a></p>
+            </section>
+            <section class="col-md-4" aria-labelledby="hostingTitle">
+                <h2 id="hostingTitle">Riesgo</h2>
+                <p>Contexto para evaluar y tratar los riesgos ya que están presente en todo y provocan pérdidas de la organización</p>
+                <p><a class="btn btn-outline-dark" href="ListadoRiesgoes/Index">Lista de Riesgos &raquo;</a></p>
+            </section>
+        </div>*@
+
+    <div class="container">
+        <h1>Sistema de Gestión de Riesgos</h1>
+        <hr />
+        <div class="list-group">
+            <div class="row">
+
+                <a href="#" class="list-group-item list-group-item-action">
+                    <h4 class="list-group-item-heading">Gestionar activos</h4>
+                    <p class="list-group-item-text">Administrar los activos de información de la organización. Agregar activos nuevos, editar los existentes y eliminar aquellos que ya no sean relevantes. Además, información detallada sobre cada activo.</p>
+                    <a class="btn btn-primary" href="ListadoActivos/Index">Ir a Gestionar activos</a>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <h4 class="list-group-item-heading">Categorías (Tipos de activos)</h4>
+                    <p class="list-group-item-text">Lista completa de los diferentes tipos de activos de información utilizados en tu organización. Se puede definir y personalizar categorías específicas de activos. Esta sección brinda una visión general de los tipos de activos presentes en la organización.</p>
+                    <a class="btn btn-primary" href="TipoActivoes/Index">Ir a Categorías de Activos</a>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <h4 class="list-group-item-heading">Departamentos</h4>
+                    <p class="list-group-item-text">Administrar los departamentos o áreas funcionales de la organización. Se puede crear nuevos departamentos, editar los existentes y eliminar los innecesarios. Esta sección ayudará a organizar y establecer claramente la estructura de la organización para la gestión de riesgos y amenazas, y facilitará la asignación de tareas y responsabilidades.</p>
+                    <a class="btn btn-primary" href="AreaActivoes/Index">Ir a Departamentos</a>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <h4 class="list-group-item-heading">Gestionar amenazas</h4>
+                    <p class="list-group-item-text">Documentar las diferentes amenazas que podrían afectar la seguridad y confidencialidad de los activos de información. Esta sección te permitirá tener una visión completa de las amenazas a las que estás expuesto y tomar medidas preventivas adecuadas.</p>
+                    <a class="btn btn-primary" href="Amenazas/Index">Ir a Amenazas</a>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <h4 class="list-group-item-heading">Gestionar vulnerabilidades</h4>
+                    <p class="list-group-item-text">Visión general de las vulnerabilidades vinculadas a los activos de información. Se podrán evaluar y clasificar las vulnerabilidades en función de la categoría del activo al que pueden afectar.</p>
+                    <a class="btn btn-primary" href="Vulnerabilidads/Index">Ir a Vulnerabilidades</a>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <h4 class="list-group-item-heading">Gestionar controles</h4>
+                    <p class="list-group-item-text">Establecer y gestionar los controles de seguridad necesarios para mitigar las amenazas identificadas. Esta sección ayudará a garantizar que se apliquen las medidas de seguridad adecuadas para proteger los activos de información.</p>
+                    <a class="btn btn-primary" href="Controles1/Index">Ir a Controles</a>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <h4 class="list-group-item-heading">Gestionar riesgos</h4>
+                    <p class="list-group-item-text">Visión general de los riesgos asociados a los activos de información. Se podrán evaluar y clasificar los riesgos en función de su probabilidad de ocurrencia y su impacto potencial.</p>
+                    <a class="btn btn-primary" href="ListadoRiesgoes/Index">Ir a Riesgos</a>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+</main>
